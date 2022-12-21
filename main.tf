@@ -20,6 +20,4 @@ resource "aws_vpc_endpoint" "endpoint" {
   subnet_ids = flatten([data.aws_subnets.private_subnets.ids])
 
   private_dns_enabled = true
-
-  tags = var.tags
 }
